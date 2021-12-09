@@ -1,1 +1,48 @@
-/* batata
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-fic {
+  background-color: #ff2d2d;
+  width: 30vw;
+  height: 5vh;
+  align-content: center;
+  justify-self: center;
+}
+
+.text-info {
+  background-color: #002955;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+}
+
+p {
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.quadro-areas {
+  list-style: none;
+}
+
+.areas-atuacao {
+  background-color: #ff2d2d;
+  width: 30vw;
+  height: 5vh;
+  align-content: center;
+  justify-self: center;
+}
