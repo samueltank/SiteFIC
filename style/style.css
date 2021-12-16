@@ -1,61 +1,61 @@
-
-.azul-200{
-  background-color: #6897F2;
+.azul-200 {
+  background-color: #6897f2;
 }
 
 .lilas-300 {
-  background-color: #B881C1;
+  background-color: #b881c1;
 }
 
 .cinza-300 {
-  background-color: #8C7E9A;
+  background-color: #8c7e9a;
 }
 
 .verde-100 {
-  background-color: #70B6B2;
+  background-color: #70b6b2;
 }
 
 .coral-300 {
-  background-color: #D26A6A;
+  background-color: #d26a6a;
 }
 
 .azul-500 {
-  background-color: #4B5796;
+  background-color: #4b5796;
 }
 
-.azul-100 { 
-  background-color: #9EBAF0;
+.azul-100 {
+  background-color: #9ebaf0;
 }
 
 .verde-500 {
-  background-color: #0E6C79;
+  background-color: #0e6c79;
 }
 
-.verde-600{
-  background-color: #6B8566;
+.verde-600 {
+  background-color: #6b8566;
 }
 
 .verde-900 {
-  background-color: #0DFF7C;
+  background-color: #0dff7c;
 }
 
 .lilas-200 {
-  background-color: #BA9FF4;
+  background-color: #ba9ff4;
 }
 
 .cinza-500 {
-  background-color: #4D4B4F;
+  background-color: #4d4b4f;
 }
 
 main {
   max-width: 1500px;
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  /* margin: 0 auto;*/
 }
 
 section.quadro-cfic {
   background-color: #002955;
+  width: 100vw;
   min-height: 60vh;
 }
 
@@ -66,14 +66,14 @@ section.quadro-cfic {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #FF2D2D 0%, #FF0000 100%);
-  border: 10px solid #FFFFFF;
+  background: linear-gradient(90deg, #ff2d2d 0%, #ff0000 100%);
+  border: 10px solid #ffffff;
 }
 
-.info-fic h3{
-  font-size: 36px;
-  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #FFFAFA;
+.info-fic h3 {
+  font-size: 32px;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fffafa;
 }
 
 .texto-info {
@@ -81,25 +81,28 @@ section.quadro-cfic {
   height: 30vh;
   margin: 20px auto 0 auto;
   padding: 40px;
-  border-left: 8px solid #FF0000;
+  border-left: 8px solid #ff0000;
 }
 
-.texto-info .destaque{
-  color: #FF8762;
+.texto-info .destaque {
+  color: #ff8762;
 }
 
 .texto-info p {
-  font-size: 32px;
-  color: #FFFAFA;
+  font-size: calc(1vw + 14px);
+  color: #fffafa;
   align-content: center;
   flex-wrap: wrap;
 }
 
 .quadro-areas {
-  min-height: 70vh;
+  width: 100vw;
+  min-height: 60vh;
   height: auto;
   padding-top: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .areas-atuacao {
@@ -109,18 +112,18 @@ section.quadro-cfic {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -45px;
-  left: 0;
-  right: 0;
-  margin: 0 auto 0px auto;
-  background: linear-gradient(90deg, #FF2D2D 0%, #FF0000 100%);
-  border: 10px solid #FFFFFF;
+  top: -60px;
+  left: 24vw;
+  right: 30vw;
+  margin: 0 auto 0 auto;
+  background: linear-gradient(90deg, #ff2d2d 0%, #ff0000 100%);
+  border: 10px solid #ffffff;
 }
 
-.areas-atuacao h3{
+.areas-atuacao h3 {
   font-size: 36px;
-  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #FFFAFA;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fffafa;
 }
 
 .grade-areas {
@@ -128,11 +131,10 @@ section.quadro-cfic {
 }
 
 .grade-areas ul {
-  width: 60vw;
+  width: 70vw;
   display: flex;
   margin-top: 40px;
   justify-content: center;
-  margin-left: 6.2vw;
   gap: 40px;
   flex-wrap: wrap;
   list-style: none;
@@ -150,25 +152,28 @@ section.quadro-cfic {
 .area a {
   text-decoration: none;
   text-align: center;
-  color: #FFFAFA;
-  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fffafa;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
 }
 
 .ondas {
-  height: 80vh;
+  top: 0;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  height: 100%;
 }
 
 @media (max-width: 720px) {
-
   .info-fic {
     width: 80vw;
     height: 12vh;
     margin: 0 auto 30px auto;
   }
 
-  .info-fic h3 {
-    font-size: 1.2rem;
+  info-fic h3 {
+    font-size: 16px;
     text-align: center;
   }
 
@@ -177,7 +182,7 @@ section.quadro-cfic {
     height: 30vh;
     margin: 20px auto 0 auto;
     padding: 10px;
-    border-left: 8px solid #FF0000;
+    border-left: 8px solid #ff0000;
   }
 
   .texto-info p {
@@ -190,15 +195,13 @@ section.quadro-cfic {
 
   .grade-areas ul {
     width: 100vw;
-    position: absolute;
-    margin-left: 0.5vw;
     gap: 20px;
   }
-  
+
   .grade-areas .area {
     width: 28vw;
     height: 15vh;
-  }  
+  }
 
   .area a {
     font-size: 1rem;
