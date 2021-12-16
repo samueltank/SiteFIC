@@ -6,39 +6,46 @@ section {
 main h1 {
   display: flex;
   justify-content: end;
+  font-size: 48px;
 }
 .Cards {
   display: flex;
   align-items: center;
+  gap: 47px;
+  width: 100vw;
+  height: 80vh;
   justify-content: center;
-  background-color: rgb(20, 180, 220);
+  background-color: rgb(255, 255, 255);
 }
 .Card {
-  background-color: chocolate;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   gap: 20px;
   padding: 40px;
-  margin: 47px;
   width: 388px;
   height: 518px;
-  box-shadow: black 2.5px 2.5px 2.5px;
+  box-shadow: rgba(0, 0, 0, 0.342) 0px 0px 15px 2.5px;
+  background-color: rgb(255, 255, 255);
 }
 .Card h2 {
   font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 28px;
+  color: #001066;
 }
 .Card p {
   font-size: 18px;
+  line-height: 21px;
+  font-family: "Roboto", sans-serif;
 }
 .Card .img {
   width: 160px;
   height: 160px;
 }
-
 nav {
   background-color: cornflowerblue;
 }
