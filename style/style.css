@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .azul-200{
   background-color: #6897F2;
@@ -61,7 +56,7 @@ main {
 
 section.quadro-cfic {
   background-color: #002955;
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 .info-fic {
@@ -93,7 +88,7 @@ section.quadro-cfic {
   color: #FF8762;
 }
 
-p {
+.texto-info p {
   font-size: 32px;
   color: #FFFAFA;
   align-content: center;
@@ -162,4 +157,50 @@ p {
 
 .ondas {
   height: 80vh;
+}
+
+@media (max-width: 720px) {
+
+  .info-fic {
+    width: 80vw;
+    height: 12vh;
+    margin: 0 auto 30px auto;
+  }
+
+  .info-fic h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .texto-info {
+    width: 80vw;
+    height: 30vh;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    border-left: 8px solid #FF0000;
+  }
+
+  .texto-info p {
+    font-size: 1.2rem;
+  }
+
+  .areas-atuacao {
+    display: none;
+  }
+
+  .grade-areas ul {
+    width: 100vw;
+    position: absolute;
+    margin-left: 0.5vw;
+    gap: 20px;
+  }
+  
+  .grade-areas .area {
+    width: 28vw;
+    height: 15vh;
+  }  
+
+  .area a {
+    font-size: 1rem;
+  }
 }
