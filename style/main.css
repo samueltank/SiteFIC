@@ -1,0 +1,442 @@
+main {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estiização da seção de Introdução */
+.secIntro {
+  height: calc(100vh - 200px);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 0 0 0;
+  background: linear-gradient(180deg, #000000 0.05%, #007bb8 82.59%);
+}
+
+.secIntro > img {
+  width: calc(200px + 25vw);
+  z-index: 2;
+}
+
+.backImage > img {
+  position: absolute;
+  z-index: 1;
+  width: 20vw;
+  left: 80%;
+  top: 50%;
+}
+
+.textIntroBold {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.textIntro {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-family: sans-serif;
+  color: aliceblue;
+}
+
+.textInitial {
+  font-weight: bold;
+  color: #ff2d2d;
+}
+
+.textCont {
+  font-weight: bold;
+  color: #ff2b58;
+}
+
+.mapBox {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Estilização da seção Sobre */
+.about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f4f4f4;
+  min-height: 80vh;
+  max-height: none;
+  width: 100vw;
+  margin-top: 200px;
+}
+
+.about > .boxTitleAbout {
+  height: 130px;
+  width: calc(200px + 20vw);
+  position: absolute;
+  top: -65px;
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff2020;
+  border: 10px solid #f4f4f4;
+  z-index: 1;
+}
+
+.about > .pointEffect {
+  position: absolute;
+  top: -155px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+}
+
+.about > .containerFlexAbout > .imgAbout > img {
+  width: calc(150px + 15vw);
+}
+
+.about > .containerFlexAbout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20vw;
+  line-height: 1.2;
+  color: #0a153a;
+}
+
+.about > .containerFlexAbout > .textContentAbout {
+  height: auto;
+  width: auto;
+  padding-left: 2%;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+/* Estilização da seção Por que SENAI? */
+.why {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: auto;
+  width: auto;
+  background-color: #ffffff;
+}
+
+.why > .boxTitlePorQueSENAI {
+  height: 130px;
+  width: calc(200px + 20vw);
+  position: absolute;
+  top: -65px;
+  margin-right: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff2020;
+  border: 10px solid #ffffff;
+}
+
+.why > .cards {
+  min-height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2vw;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background-color: #ffffff;
+}
+
+.why > .cards > .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  gap: 20px;
+  padding: 2%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.11);
+  background-color: #ffffff;
+  transition: box-shadow 0.2s linear;
+}
+
+.why > .cards > .card:hover {
+  box-shadow: none;
+}
+
+.why > .cards > .card > .titleCard {
+  color: #001066;
+  font-size: clamp(1rem, 1.4rem, 1.6rem);
+}
+
+.why > .cards > .card > .contentCard {
+  color: black;
+}
+
+/* Estilização da seção de informações sobre os cursos */
+.infoCurses {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  background-color: cornflowerblue;
+}
+
+.infoCurses > .boxTitleCurses {
+  height: 130px;
+  width: calc(200px + 20vw);
+  position: absolute;
+  top: -65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(90deg, #FF2D2D 0%, #FF0000 100%);
+  border: 10px solid #ffffff;
+}
+
+.infoCurses > .infoContainerFlex {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a153a;
+}
+
+.infoCurses > .infoContainerFlex > .infoCursesBlock {
+  color: white;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  padding: 50px;
+  margin: 100px;
+  border-left: 10px solid #FF3131;
+}
+
+.infoCurses > .infoContainerFlex > .infoCursesBlock > strong {
+  color: orangered;
+}
+
+/* Seção de categorias de cursos */
+.categCurses {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  background-image: url(../img/ondas.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 1px solid #001066;
+}
+
+.categCurses > .boxTitleCurses {
+  height: 130px;
+  width: calc(200px + 20vw);
+  position: absolute;
+  top: -65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(90deg, #FF2D2D 0%, #FF0000 100%);
+  border: 10px solid #ffffff;
+}
+
+/* .categCurses > .waves > img {
+  position: absolute;
+  top: -0px;
+  bottom: -0px;
+  left: -0px;
+  right: -0px;
+  height: 909px;
+} */
+
+.categCurses > .cardsCatFlexContainer {
+  min-height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.categCurses > .cardsCatFlexContainer > .categoInCards {
+  min-height: 60vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.categCurses > .cardsCatFlexContainer >.categoInCards > .cardsCat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-width: 300px;
+  min-height: 150px;
+  color: white;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.cardCat1 {
+  background-color:#6897F2;
+}
+.cardCat2 {
+  background-color: #B881C1;
+}
+.cardCat3 {
+  background-color: #8C7E9A;
+}
+.cardCat4 {
+  background-color: #70B6B2;
+}
+.cardCat5 {
+  background-color: #D26A6A;
+}
+.cardCat6 {
+  background-color: #4B5796;
+}
+.cardCat7 {
+  background-color: #9EBAF0;
+}
+.cardCat8 {
+  background-color: #0E6C79;
+}
+.cardCat9 {
+  background-color: #6B8566;
+}
+.cardCat10 {
+  background-color: #009e4a;
+}
+.cardCat11 {
+  background-color: #BA9FF4;
+}
+.cardCat12 {
+  background-color: #4D4B4F;
+}
+
+.categCurses > .cardsCatFlexContainer >.categoInCards > .cardsCat:hover {
+  opacity: 0.8;
+}
+
+.categCurses > .cardsCatFlexContainer >.categoInCards > .cardsCat > a {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilização da seção das Trilhas */
+.trilhas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 10px;
+  z-index: -2;
+}
+
+.trilhas > .backTrilha {
+  position: absolute;
+  height: 200px;
+  width: 100vw;
+  top: -1px;
+  background-color: #001066;
+  z-index: -1;
+}
+
+.trilhas > .imgBox > .trilhaImage {
+  z-index: 0;
+  width: 50vw;
+}
+
+/* Divisor criado por shapeDividers */
+.divisor {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100px;
+}
+.divisor::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 30px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 2" preserveAspectRatio="none"><path d="M0 0q5 4 10 0z" fill="%23007bb8"/></svg>');
+}
+
+@media (min-width: 768px) {
+  .divisor::before {
+    background-size: 130% 100px;
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .divisor::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 112% 100px;
+    background-position: 50% 0%;
+  }
+}
+@media (min-width: 2100px) {
+  .divisor::before {
+    background-size: 112% calc(2vw + 100px);
+  }
+
+  .categCurses > .waves > img {
+    display: none;
+  }
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 1025px) {
+
+}
+
+@media (max-width: 2100px) {
+
+}

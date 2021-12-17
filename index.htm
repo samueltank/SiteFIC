@@ -1,26 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel</title>
-</head>
-<body>
-  <nav>
-    <img src="" alt="">
-    <ul>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </ul>
-  </nav>
-  <main>
-    
-  </main>
-  <footer>
+  <head>
+    <!-- Metadados do Index -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página desenvolvida a pedido do professor Leonid para aperfeiçoar as técnicas em criação de páginas web.">
+    <meta name="Developers" content="Samuel Tank, Rogger Silva, Vinicius Jesus e Mariana Gomes">
 
-  </footer>
-</body>
+    <!-- Importação de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+    <!-- Folhas de estilo CSS -->
+    <link rel="stylesheet" href="./style/body.css"   />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/main.css"   />
+    <link rel="stylesheet" href="./style/reset.css"  />
+
+    <title>FIC SENAI</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho com barra de navegação -->
+    <header>
+      <nav class="navBar">
+        <div class="logoBox">
+          <a href="https://jandira.sp.senai.br/" target="_blank"><img src="./img/logo.jpg" alt="Logo SENAI" title="Logo do SENAI-SP" /></a>
+          <p class="textLogo">
+            <span class="textTitleBarSmall">JANDIRA - CENTRO</span> <br />
+            PROFº. VICENTE AMATO
+          </p>
+        </div>
+
+        <ul class="menuBar">
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="#why">Por que SENAI</a></li>
+          <li><a href="#infoCurses">Cursos</a></li>
+          <li><a href="#trilhas">Trilhas Sugeridas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Seção Introdução -->
+      <section class="secIntro">
+        <p class="textIntro">
+          <span class="textIntroBold">Cursos</span> de <br />
+          <span class="textIntroBold">Formação</span>
+          <span class="textInitial">Inicial</span> <br />
+          e <span class="textCont">Continuada</span>
+        </p>
+        <img src="./img/PerfilFoto.svg" alt="Foto representativa da equipe SENAI" />
+      </section>
+      <div class="backImage"><img src="./img/backImage.svg"></div>
+      <div class="divisor"></div>
+
+      <!-- Seção Sobre -->
+      <section class="about" id="about"> <!-- Relative -->
+        <div class="boxTitleAbout">Sobre nós</div> <!-- absolute -->
+        <div class="pointEffect"><img src="./img/blackPoints.svg" alt="Imagem meramente decorativa." /></div>
+        <div class="containerFlexAbout">
+          <div class="textContentAbout">
+            <p>A Escola <abbr title="Serviço Nacional De aprendizagem Industrial">SENAI</abbr> “<i>Prof. Vicente Amato</i>” é considerada referência em educação profissional em sua região de atuação.</p>
+            <p>Localizada no município de Jandira, grande São Paulo, atende também o município de Itapevi e ainda a cidade de Barueri, em algumas áreas específicas.</p>
+            <p>Ao longo de <em>dezoito anos</em>, a escola sempre buscou oferecer cursos à comunidade em geral, <strong>propiciando o desenvolvimento de profissionais</strong> para atender as demandas do mercado de trabalho.</p>
+          </div>
+          <div class="imgAbout"><img src="./img/imgSchoolsSENAI.svg" alt="Imagem demonstrativa da escola SENAI." /></div>
+        </div>
+      </section>
+
+      <!-- Seção Por que SENAI? -->
+      <section class="why" id="why"> <!-- Relative -->
+        <div class="boxTitlePorQueSENAI">Por que SENAI?</div> <!-- Absolute -->
+        <div class="cards">
+          <div class="card card1">
+            <div><img src="./img/mao.png" alt="Icone de uma mão com uma estrela flutuando na palma." style="width: 45%;"></div>
+            <p class="titleCard">Cursos de Qualidade e credibilidade com certificação reconhecida </p>
+            <p class="contentCard">7 a cada 10 alunos SENAI são contratados. Os cursos SENAI possuem credibilidade na industria e garantem exelência no ensino, com professores fortemente qualificados em suas respectivas áreas.</p>
+          </div>
+          <div class="card card2">
+            <div><img src="img/conquistar.png" alt="Icone de um boneco com uma bandeira no topo de uma montanha, simbolizando uma conquista." style="width: 45%;"></div>
+            <p class="titleCard">Metodologia moderna de ensino, para que você alcance seus objetivos com aptidão</p>
+            <p class="contentCard">Metodologia moderma que protagoniza você, para que se torne ápito em oculpar a função almejada com exelência. Simulando a industria para que você esteja pronto. </p>
+          </div>
+          <div class="card card3">
+            <div><img src="img/palacio.png" alt="Icone de um castelo robusto." style="width: 50%;"></div>
+            <p class="titleCard">Estrutura moderna e confortável para uma melhor capacitação, suporte total a você!</p>
+            <p class="contentCard">O SENAI possui um ambiente agradável e moderno para um aprender prazeroso. Possuimos uma comissão interna para a prevenção de acidentes e equipamentos de última geração, adequados para o seu aprendizado.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Cursos de Formação Inicial e Continuada -->
+      <section class="infoCurses" id="infoCurses"> <!-- Relative -->
+        <div class="boxTitleCurses">Formação Inicial e Continuada</div> <!-- Absolute -->
+        <div class="infoContainerFlex">
+          <div class="infoCursesBlock">Os <strong>Cursos de Formação Inicial e Continuada</strong> são cursos de capacitação rápida, dirigidos a profissionais já atuantes ou que buscam ingressar no mercado de trabalho. São cursos de iniciação, qualificação, aperfeiçoamento e especialização profissional, com duração que varia de acordo com as especificidades de cada caso.</div>
+        </div>
+      </section>
+
+      <!-- Seção de categorias de cursos -->
+      <section class="categCurses">
+        <div class="boxTitleCurses">Áreas de Atuação</div> <!-- Absolute -->
+        <!-- <div class="waves"><img src="img/ondas.svg" alt="Imagem meramente decorativa."></div> -->
+        <div class="cardsCatFlexContainer">
+          <div class="categoInCards">
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat1">Academia Cisco</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat2">Automação</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat3">Automotiva</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat4">Construção Civíl</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat5">Eletroeletrônica</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat6">Gestão</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat7">Logística</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat8">Metalmecânica</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat9">Saúde e segurança <br>no trabalho</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat10">Tecnologia da Informação</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat11">Têxtil e Vestuário</a>
+            <a href="https://jandira.sp.senai.br/cursos/13/712/formacao-inicial-e-continuada?Parent=711" class="cardsCat cardCat12">Cursos EAD Gratuítos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Trilhas -->
+      <section class="trilhas" id="trilhas">
+        <div class="backTrilha"></div>
+        <div class="imgBox"><img class="trilhaImage" src="./img/trilhasDeAprendizagem.svg" alt="Trilha profissionalizante sugerida" title="Trilha Automotiva sugerida"></div>
+      </section>
+
+      <section class="mapbox">
+        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=RuaElton%20Silva,%20905%20-%20Centro%20CEP06600%20025%20-%20Jandira%20-%20SP+(Localidade%20SENAI-%20Jandira)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">gps watches</a></iframe></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="infoSENAI">
+        <p>
+          Escola <abbr title="Serviço Nacional de Aprendizagem Industrial">SENAI</abbr> "Profº. Vicente Amato"<br>
+          <address>Rua Elton Silva, 905 - Centro - Jandira/SP - CEP 06600-025 <br> Telefone: (11) 4772-4700 |E-mail:senaijandira@sp.senai.br</address>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright 2021 © Todos os direitos reservados. <br>
+          Este site é parte do curso de aprendizagem em ferramentas web e seu caráter é, estritamente, didático. 
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

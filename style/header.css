@@ -1,0 +1,70 @@
+header {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+}
+
+.navBar {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoBox > a > img {
+  width: calc(5em + 10vw);
+}
+
+.textLogo {
+  font-size: 1rem;
+}
+
+.textTitleBarSmall {
+  font-size: 50%;
+}
+
+.menuBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuBar > li {
+  list-style: none;
+}
+
+.menuBar > li > a {
+  text-decoration: none;
+  color: #002955;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  max-width: 12vw;
+  min-width: 12vw;
+  font-size: clamp(0.5rem, 1rem, 1.2rem);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.menuBar > li > a:hover {
+  color: #ffffff;
+  background-color: red;
+  transition: all 0.2s ease-in-out;
+}
