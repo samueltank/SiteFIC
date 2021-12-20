@@ -25,7 +25,7 @@ header {
 }
 
 .logoBox > a > img {
-  width: calc(5em + 10vw);
+  width: 200px;
 }
 
 .textLogo {
@@ -55,8 +55,7 @@ header {
   justify-content: center;
   text-align: center;
   height: 50px;
-  max-width: 12vw;
-  min-width: 12vw;
+  width: 200px;
   font-size: clamp(0.5rem, 1rem, 1.2rem);
   border-radius: 50px;
   cursor: pointer;
@@ -67,4 +66,93 @@ header {
   color: #ffffff;
   background-color: red;
   transition: all 0.2s ease-in-out;
+}
+
+
+/* Estilização do mobile */
+
+#btnMobile {
+  display: none !important;
+}
+
+@media (max-width: 1100px) {
+
+  #btnMobile {
+    display: flex !important;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .navBar {
+    padding: 0 15px 0 15px;
+  }
+
+  .menuBar {
+    display: flex !important;
+    visibility: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 0;
+    width: 100vw;
+    top: 80px;
+    left: 0;
+    gap: 0;
+    background-color: white;
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .menuBar li > a {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    border-radius: 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.349);
+  } 
+
+  #nav.active > .menuBar {
+    /* display: flex !important; */
+    height: calc(100vh - 80px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #burguer {
+    width: 20px;
+    border-top: 3px solid;
+  }
+
+  #burguer::after, #burguer::before {
+    position: relative;
+    height: 3px;
+    width:20px;
+    display: block;
+    content: '';
+    margin-top: 5px;
+    background-color: currentColor;
+    transition: 0.3s;
+  }
+
+  #nav.active #burguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #burguer::before {
+    transform: rotate(135deg)
+  }
+
+  #nav.active #burguer::after {
+    bottom: 8px;
+    transform: rotate(-135deg);
+  }
+}
+
+@media (max-width: 1280px) {
+  .textLogo {
+    display: none !important
+  }
 }

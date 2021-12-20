@@ -36,3 +36,9 @@ footer > .copyright {
   align-items: center;
   justify-content: flex-end;
 }
+
+@media (max-width: 768px) {
+  #footer.hidden {
+    display: none;
+  }
+}
